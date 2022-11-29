@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.icons {
+  margin: 2rem 1rem;
+}
+
+.icon {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.cards {
+  margin: 4rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.card {
+  width: 8rem;
+  height: 12rem;
+  margin: 1%;
+  position: absolute;
+  top: 150px;
+  right: 300px;
+  transition: transform 1.5s linear;
+}
+
+.card:nth-child(1) {
+  background-color: pink;
+  z-index: 15;
+}
+
+.card:nth-child(2) {
+  background-color: rgb(159, 63, 228);
+  z-index: 13;
+}
+
+
+.card:nth-child(3) {
+  background-color: blue;
+  z-index: 12;
+}
+
+.card:nth-child(4) {
+  background-color: lightblue;
+  z-index: 11;
+}
+
+.card:nth-child(5) {
+  background-color: green;
+  z-index: 10;
+}
+
+.card:nth-child(6) {
+  background-color: lightgreen;
+  z-index: 8;
+}
+
+.card:nth-child(7) {
+  background-color: yellow;
+  z-index: 7;
+}
+
+.card:nth-child(8) {
+  background-color: orange;
+  z-index: 5;
+}
+
+.card:nth-child(9) {
+  background-color: red;
+  z-index: 3;
+}
+
+.cards:hover .card:nth-child(1) {
+  transform: translate(-40px, 8px) rotate(-40deg);
+}
+
+.cards:hover .card:nth-child(2) {
+  transform: translate(-30px, 6px) rotate(-30deg);
+}
+
+.cards:hover .card:nth-child(3) {
+  transform: translate(-20px, 4px) rotate(-20deg);
+}
+
+.cards:hover .card:nth-child(4) {
+  transform: translate(-10px, 2px) rotate(-10deg);
+}
+
+.cards:hover .card:nth-child(6) {
+  transform: translate(10px, 2px) rotate(10deg);
+}
+
+.cards:hover .card:nth-child(7) {
+  transform: translate(20px, 3px) rotate(20deg);
+}
+
+.cards:hover .card:nth-child(8) {
+  transform: translate(30px, 4px) rotate(30deg);
+}
+
+.cards:hover .card:nth-child(9) {
+  transform: translate(40px, 5px) rotate(40deg);
+}

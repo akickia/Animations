@@ -1,0 +1,95 @@
+body {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+.seconds{
+  width: 200px;
+  height: 2px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  animation: seconds 30s linear infinite ;
+  z-index: 3;
+}
+
+.minutes{
+  width: 150px;
+  height: 5px;
+  background-color: blue;
+  border-radius: 5px;
+  position: absolute;
+  top: 250px;
+  left: 175px;
+  animation: minutes 3600s linear infinite ;
+  z-index: 2;
+}
+
+
+.middle {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 240px;
+  left: 235px;
+  z-index: 5;
+}
+
+
+@keyframes seconds {
+  0% {
+    transform: rotate(-90deg) translate(100px);
+  }
+  100% {
+    transform: rotate(270deg) translate(100px);
+  }
+}
+
+@keyframes minutes {
+  0% {
+    transform: rotate(-90deg) translate(75px);
+  }
+  100% {
+    transform: rotate(270deg) translate(75px);
+  }
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+

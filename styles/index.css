@@ -1,0 +1,28 @@
+nav {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+a:hover {
+  background-color: #000;
+  color: #fff;
+}

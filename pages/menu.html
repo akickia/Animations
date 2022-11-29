@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/menu.css">
+  <title>Animation bootcamp</title>
+</head>
+<body>
+  <article class="icons">
+    <i class="fas fa-bars toggle"></i>
+    <a class="icon" href="../index.html"><i class="fas fa-backward"></i></a>
+  </article>
+  <nav>
+    
+    <a href="button.html">button</a>
+    <a href="menu.html">menu</a>
+    <a href="pride.html">pride cards</a>
+    <a href="corners.html">four corners</a>
+    <a href="spinner.html">spinner</a>
+    <a href="clock.html">stopwatch</a>
+    <a href="#">starwars crawler</a>
+    <a href="#">flip a card</a>
+    <a href="#">the cube</a>
+    <a href="#">organic</a>
+  </nav>
+
+  <script>
+    document.querySelector('.toggle') .addEventListener('click', (e) => {
+    document.querySelector('nav').classList.toggle('open')
+        })
+  </script>
+</body>
+</html>

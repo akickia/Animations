@@ -1,0 +1,79 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: margin 1s ease 0s
+}
+
+nav a {
+  margin-left: -400px;
+  padding: 0;
+  box-shadow: 1px 1px 15px 1px rgb(0, 0, 0, 0.1);
+  width:200px;
+}
+
+nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars, .icon {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.fa-bars:hover, .icon:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.open a {
+  margin: 1rem;
+}
+
+.open a:nth-child(1) {
+  transition-delay: 0s;
+}
+.open a:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.open a:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.open a:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.open a:nth-child(5) {
+  transition-delay: 0.8s;
+}
+.open a:nth-child(6) {
+  transition-delay: 1s;
+}
+.open a:nth-child(7) {
+  transition-delay: 1.2s;
+}
+.open a:nth-child(8) {
+  transition-delay: 1.4s;
+}
+.open a:nth-child(9) {
+  transition-delay: 1.6s;
+}
+.open a:nth-child(10) {
+  transition-delay: 1.8s;
+}
+
