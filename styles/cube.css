@@ -1,0 +1,84 @@
+body {
+  margin: auto;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  background-color: #fff;
+  align-self: flex-end;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 20s linear infinite;
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side:first-child {
+  background-color: yellow;
+  transform: rotateX(180deg) translateZ(0px);
+}
+
+.side:nth-child(2) {
+  background-color: red;
+  transform: rotateX(90deg) translateY(200px) translateY(-100px) translateZ(100px);
+
+}
+
+.side:nth-child(3) {
+  background-color: blue;
+  transform: translateZ(200px);
+}
+
+.side:nth-child(4) {
+  background-color: green;
+  transform: rotateX(-90deg)translateX(0px) translateY(-100px) translateZ(100px);
+}
+
+.side:nth-child(5) {
+  background-color: white;
+  transform: rotateY(90deg) translateX(-100px) translateZ(100px);
+}
+
+
+.side:last-child {
+  background-color: black;
+  transform: rotateY(-90deg) translateX(100px) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

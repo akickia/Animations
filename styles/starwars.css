@@ -1,0 +1,117 @@
+@import url(//db.onlinewebfonts.com/c/fdba7e720332de91102b6e267e0f0fb2?family=News+Gothic);
+
+
+body {
+  height: 100vh; 
+  overflow: hidden;
+  text-align: left;
+  font-family: 'News Gothic';
+  background-image: url(https://cutewallpaper.org/21/stars-in-space-background/Best-Star-Space-Illustrations,-Royalty-Free-Vector-Graphics-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  color: yellow;
+  position: relative;
+  width: 90vw;
+  height: 150px;
+  perspective: 200px;
+  margin: auto;
+  font-size: 4rem;
+}
+
+h2 {
+  color: blue;
+  opacity: 0;
+  animation: intro 8s linear 0.5s 1 forwards;
+  position: absolute;
+  top: 100px;
+  left: 35%;
+  font-family: 'News Gothic';
+  font-size: 2.5rem;
+  text-shadow: 3px 4px 15px rgb(51 29 126), 3px 4px 15px rgb(0 48 259), 3px 4px 15px rgb(20 0 190)
+}
+
+.wrapper::before {
+  content: url(https://upload.wikimedia.org/wikipedia/commons/9/9b/Star_Wars_Yellow_Logo.svg);
+  position: absolute;
+  left: 30%;
+  top: 250px;
+  transform: scale(0);
+  animation: logo 5s linear 10s 1 forwards
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes intro {
+  0%{
+    opacity: 0;
+  }  
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.test {
+  animation: crawl 90s linear 8s forwards;
+  opacity: 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.test p {
+  text-align: start;
+  line-height: 1em;
+}
+
+@keyframes crawl {
+  0% {
+    opacity: 1;
+    transform: rotateX(60deg)  translateY(1000px);
+  }
+  75% {
+    opacity: 1;
+    transform: rotateX(60deg)  translateY(-2000px);
+  }
+  100% { 
+    opacity: 0;
+    transform: rotateX(60deg) translateY(-3000px);
+  }
+}
+
+a {
+  text-decoration: none;
+  background-color: #fff;
+  float: right;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  background-color: #000;
+  color: #fff;
+}

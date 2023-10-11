@@ -1,0 +1,155 @@
+body {
+  margin: auto;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  background-color: #fff;
+  align-self: flex-end;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2rem;
+  transition: all 0.5s ease;
+}
+
+.icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  perspective: 500px;
+}
+
+.card::before {
+  content: 'front';
+  color: yellowgreen;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: rotate(30deg);
+
+}
+
+.card::after {
+  content: 'back';
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  opacity: 0;
+  transform: rotateY(180deg) rotateZ(-30deg);
+
+}
+
+.card {
+  height: 20rem;
+  width: 13rem;
+  border-radius: 15px;
+  margin: 10rem auto;
+  background-color: black;
+  box-shadow: 5px 5px 15px #000;
+}
+
+.container:hover .card {
+  animation: rotate 4s ease-in-out infinite forwards;
+}
+
+.container:hover .card::before {
+  animation: hide 4s ease-in-out infinite forwards;
+}
+
+.container:hover .card::after {
+  animation: show 4s ease-in-out infinite forwards;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg) translateY(0px) ;
+  }
+  24% {
+    transform: rotateY(90deg) translateY(-150px);
+    background-color: black;
+  }
+  25% {
+    transform: rotateY(90deg) translateY(-150px);
+    background-color: greenyellow;
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-150px);
+    background-color: greenyellow;
+  }
+  75% {
+    transform: rotateY(270deg) translateY(-150px);
+    background-color: greenyellow;
+  }
+  76% {
+    transform: rotateY(270deg) translateY(-150px);
+    background-color: black
+  }
+  100% {
+    transform: rotateY(360deg) translateY(0px);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+
+  }
+  24% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+    }
+  75% {
+    opacity: 0;
+  }
+  76% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    }
+  75% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

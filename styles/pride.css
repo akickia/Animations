@@ -6,13 +6,11 @@ body {
   margin: auto;
 }
 
-.icons {
-  margin: 2rem 1rem;
-}
-
 .icon {
   text-decoration: none;
   color: black;
+  align-self: flex-end;
+  margin: 2rem; 
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
