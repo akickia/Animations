@@ -1,3 +1,28 @@
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: blinkingLights 5s linear infinite;
+}
+
+main {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 nav {
   margin: 3rem auto;
   display: flex;
@@ -25,4 +50,26 @@ a {
 a:hover {
   background-color: #000;
   color: #fff;
+}
+
+@keyframes blinkingLights {
+  0% {
+    color: black
+  }
+  25% {
+    color: green;
+    transform: scale(1.1);
+  }
+  50% {
+    color: red;
+    transform: scale(1);
+  }
+  75% {
+    color: blue;
+    transform: scale(1.1);
+  }
+  100% {
+    color: black;
+    transform: scale(1)
+  }
 }
