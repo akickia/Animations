@@ -4,6 +4,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  max-width: 800px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {

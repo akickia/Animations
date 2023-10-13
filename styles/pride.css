@@ -4,6 +4,8 @@ body {
   max-width: 800px;
   width: 100%;
   margin: auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .icon {
@@ -27,6 +29,7 @@ body {
 
 .cards {
   margin: 4rem 0;
+  max-width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -39,8 +42,6 @@ body {
   height: 12rem;
   margin: 1%;
   position: absolute;
-  top: 150px;
-  right: 300px;
   transition: transform 1.5s linear;
 }
 

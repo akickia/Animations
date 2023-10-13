@@ -1,6 +1,7 @@
 body {
   margin: auto;
   background-color: lightgray;
+  max-width: 800px;
 }
 
 .icon {
@@ -32,8 +33,8 @@ body {
 }
 
 .container {
-  width: 500px;
-  height: 500px;
+  width: 320px;
+  height: 320px;
   background-color: #fff;
   border: 1px solid rgb(0, 0, 0, 0.5);
 }
@@ -52,25 +53,25 @@ body {
   }
 
   24% {
-    transform: translateY(450px);
+    transform: translateY(270px);
   }
 
  
   27% {
-    transform: translateY(450px);
+    transform: translateY(270px);
   }
   49% {
-    transform: translateY(450px) translateX(450px);
+    transform: translateY(270px) translateX(270px);
   }
   52% {
-    transform: translateY(450px) translateX(450px);
+    transform: translateY(270px) translateX(270px);
   }
 
   74% {
-    transform: translateX(450px);
+    transform: translateX(270px);
   }
   77% {
-    transform: translateX(450px);
+    transform: translateX(270px);
   }
 
   99% {

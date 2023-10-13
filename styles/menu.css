@@ -1,3 +1,13 @@
+:root {
+  background-color: lightgray;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 3rem
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -14,7 +24,7 @@ a {
 }
 
 nav a {
-  margin-left: -400px;
+  margin-left: -1000px;
   padding: 0;
   box-shadow: 1px 1px 15px 1px rgb(0, 0, 0, 0.1);
   width:200px;
@@ -27,6 +37,8 @@ nav a:hover {
 
 .icons {
   display: flex;
+  max-width: 100%;
+  width: 100%;
   justify-content: space-between;
 }
 

@@ -1,15 +1,18 @@
 body {
-  max-width: 1000px;
-  min-height: 300px;
+  max-width: 800px;
+  min-height: 400px;
   margin: auto;
   text-align: center;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  align-items: center;;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .spinner {
+  margin-top: 5rem;
   position: relative;
 }
 .stroke {

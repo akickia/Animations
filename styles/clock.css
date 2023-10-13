@@ -1,11 +1,10 @@
 body {
-  max-width: 1000px;
-  min-height: 100vh;
+  max-width: 800px;
+  min-height: 800px;
   margin: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -15,7 +14,9 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  margin: 3rem;
 }
+
 .seconds{
   width: 200px;
   height: 2px;
@@ -93,4 +94,16 @@ a {
 }
 
 
+@media screen and (max-width: 500px) {
+  .clock {
+    animation: smaller .5s forwards
+  }
+}
 
+@keyframes smaller {
+  from {
+    transform: scale(1);
+  } to {
+    transform: scale(0.5);
+  }
+}
